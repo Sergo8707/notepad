@@ -7,13 +7,13 @@ if (Gem.win_platform?)
     io.set_encoding(Encoding.default_external, Encoding.default_internal)
   end
 end
-# /XXX
 
 # Подключаем класс Post и его детей
-require_relative 'post.rb'
-require_relative 'link.rb'
-require_relative 'task.rb'
-require_relative 'memo.rb'
+require_relative 'lib/post.rb'
+require_relative 'lib/link.rb'
+require_relative 'lib/task.rb'
+require_relative 'lib/memo.rb'
+
 
 puts "Привет я твой блокнот! "
 puts "Что хотите записать в блокнот?"

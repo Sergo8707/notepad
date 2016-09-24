@@ -7,7 +7,8 @@ class Post
   # статическое поле класса или class variable
   # аналогично статическим методам принадлежит всему классу в целом
   # и доступно незвисимо от созданных объектов
-  @@SQLITE_DB_FILE = 'notepad.sqlite'
+  @@SQLITE_DB_FILE = '../db/notepad.sqlite'
+  @@SQLITE_DB_FILE_NEW = 'db/notepad.sqlite'
 
   # теперь нам нужно будет читать объекты из базы данных
   # поэтому удобнее всегда иметь под рукой связь между классом и его именем в виде строки
@@ -122,7 +123,7 @@ class Post
   end
 
   def save_to_db
-    db = SQLite3::Database.open(@@SQLITE_DB_FILE) #открыть базу SQLite
+    db = SQLite3::Database.open(@@SQLITE_DB_FILE_NEW) #открыть базу SQLite
     db.results_as_hash = true
 
     db.execute(
