@@ -12,6 +12,8 @@
 
 ###Основные команды в програме:
 - `ruby new_post.rb` - чтобы добавить новый `post, link, task`  
+
+выполнять в папке `lib`  
 - `ruby read.rb` - полный список заметок  
 - `ruby read.rb -h` - помощь
 - `ruby read.rb --link` - вывеси список только с link.

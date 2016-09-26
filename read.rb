@@ -8,10 +8,10 @@ if (Gem.win_platform?)
   end
 end
 
-require_relative 'post.rb'
-require_relative 'link.rb'
-require_relative 'task.rb'
-require_relative 'memo.rb'
+require_relative 'lib/post.rb'
+require_relative 'lib/link.rb'
+require_relative 'lib/task.rb'
+require_relative 'lib/memo.rb'
 
 # id, limit, type
 # будем обрабатывать параметры командной строки с помощью спец. библиотеки руби
